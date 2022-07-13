@@ -23,3 +23,7 @@ Route::get('/laravel', function () {
 Route::get('/admin/user', function () {
     return view('adminuser');
 });
+Route::get('/admin/create', function () {
+    return view('admincreate');
+});
+
