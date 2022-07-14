@@ -16,25 +16,6 @@ p {
     line-height: 1.7em;
     color: #999;
 }
-
-a, a:hover, a:focus {
-    color: inherit;
-    text-decoration: none;
-    transition: all 0.3s;
-}
-ul ul a {
-    font-size: 0.9em !important;
-    padding-left: 30px !important;
-    background: #6d7fcc;
-}
-.caption{
-    caption-side: top;
-    display: table-caption;
-}
-.text{
-    text-align: center;
-    justify-self: center;
-}
 .sidebar{
     box-sizing: border-box;
     background-color: aquamarine;
@@ -56,3 +37,30 @@ ul ul a {
     background-color: aquamarine;
     border: aqua;
 } 
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    
+}
+.sidenav .ul .li .a{
+    border: none;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}

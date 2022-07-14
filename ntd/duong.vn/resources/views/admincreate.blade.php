@@ -77,11 +77,11 @@
                                 </div>                                
                                 <div class="row g-2 fs-6 fw-bold">
                                     <div class="col-md-6">
-                                        <label for="" class="form-label">Confirm Password</label>
+                                        <label for="" class="form-label">Password</label>
                                         <input type="password" class="form-control" name="" id="" placeholder="">
                                     </div>
                                     <div class="col-md-6">
-                                    <label for="inputPassword2" class="form-label">Password</label>
+                                    <label for="inputPassword2" class="form-label">Confirm Password</label>
                                     <input type="password" class="form-control"  >
                                     </div>
                                 </div>
