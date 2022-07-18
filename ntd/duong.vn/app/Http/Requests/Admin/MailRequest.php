@@ -4,17 +4,17 @@ namespace App\Http\Requests\Admin;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class RoleRequest extends FormRequest
+class MailRequest extends FormRequest
 {
     public function authorize()
     {
-        return true;
+        return false;
     }
+
     public function rules()
     {
         return [
-            'id' => 'required',
-            'name' => 'required'
+            'mail' => 'required',
         ];
     }
 }

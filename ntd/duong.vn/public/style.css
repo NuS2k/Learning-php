@@ -20,6 +20,7 @@ p {
     box-sizing: border-box;
     background-color: aquamarine;
     border-color: aqua;
+    border-radius: 5px;
 }
 .mr-0 {
     margin-right: 0;
@@ -38,23 +39,30 @@ p {
     border: aqua;
 } 
 .sidenav {
-    height: 100%;
-    width: 160px;
-    position: fixed;
+    height: 725px;
+    width: 450px;
+    position: relative;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: black;
+    background-color: #87CEEB;
     overflow-x: hidden;
-    padding-top: 20px;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 100px;
+    border-color: #4169E1;
+    border-style: solid;
+    border-width: thin;
 }
   
   .sidenav a {
-    padding: 6px 8px 6px 16px;
+    padding: 6px 8px 15px 25px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 15px;
     color: black;
     display: block;
+
+    
     
 }
 .sidenav .ul .li .a{

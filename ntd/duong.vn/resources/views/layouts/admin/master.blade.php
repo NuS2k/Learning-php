@@ -12,7 +12,7 @@
     <title>{{ env('APP_NAME') }}</title>
   </head>
   <body>
-
+    
         @include('partitions.navbar')
         @include('partitions.sidebar')
 

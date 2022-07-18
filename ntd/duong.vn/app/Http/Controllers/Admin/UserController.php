@@ -8,34 +8,27 @@ use App\Http\Requests\Admin\UserRequest;
 
 class UserController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
-    {
+    {   
+        // $allSessions = session()->all();
+        // dd($allSessions);
         return view('admin.users.index');
+        return view('admin.user.index', [
+            'users' => Session::get('user'),
+        ]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         return view('admin.users.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(UserRequest $request)
     {
         $this->store($request->validated());
+        $input = $request->validated();
+        $collection = collect($input);
+        Session::push('user', $collection);
+        return view('admin.user.index');
     }
-}
+}   
